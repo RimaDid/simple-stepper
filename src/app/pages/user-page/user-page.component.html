@@ -1,0 +1,11 @@
+<div class="user-page">
+    <div *ngIf="(userResponse | async) as user$" class="user-card">
+        <img class="avatar" [attr.src]="user$.avatar_url" alt="no image available">
+        <div class="user-info">
+            <span><h6>Name </h6>{{user.firstName}} {{user.lastName}}</span>
+            <span><h6>Username </h6> {{user$.name}}</span>
+            <span><h6>Email </h6> {{user.email}}</span>
+        </div>
+    </div>
+</div>
+

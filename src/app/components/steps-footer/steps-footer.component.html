@@ -1,0 +1,9 @@
+<div class="steps-footer-container">
+    <button (click)="onPreviousStep.emit()" [disabled]="isFirstStep" class="btn">
+        Previous
+      </button>
+    <button (click)="onNextStep.emit(true)" [disabled]="!isStepComplete" class="btn">
+        {{ isLastStep? 'Finish' : 'Next' }}
+      </button>
+      
+</div>

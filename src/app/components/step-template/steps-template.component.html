@@ -1,0 +1,6 @@
+<div class="stepper-container">
+    <app-steps-header [steps]="steps | async" [currentStep]="currentStep | async" ></app-steps-header>
+    <div class="step-content">
+      <router-outlet></router-outlet>
+    </div>
+</div>

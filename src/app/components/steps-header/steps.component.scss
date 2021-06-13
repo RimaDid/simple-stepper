@@ -1,0 +1,55 @@
+@import './../../../assets/colors.scss';
+
+.steps-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-bottom: 1px solid gainsboro;
+}
+.step-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    span {
+        padding: 5px;
+        color: $blue;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}
+.step-bubble {
+    padding: 8px;
+    border: 2px solid $blue;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: $blue;
+    background-color: $white;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.step-divider {
+    height: 2px;
+    background: $blue;
+    flex: 1;
+    margin: 0px 10px;
+}
+
+.step-current, .step-complete {
+    background: $blue;
+    color: $white;
+    cursor: pointer;
+}
+
+.step-incomplete {
+    cursor: not-allowed;
+    pointer-events: none;
+}

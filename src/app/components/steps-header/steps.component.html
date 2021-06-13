@@ -1,0 +1,13 @@
+<div class="steps-header">
+  <ng-container *ngFor="let step of steps; let i = index;">
+    <div class="step-item">
+      <div (click)="onStepClick.emit(step)"
+        [ngClass]="{ 'step-complete': step.isComplete, 'step-incomplete': !step.isComplete, 'step-current': currentStep?.stepIndex === step.stepIndex }"
+        class="step-bubble">{{ step.stepIndex }}
+      </div>
+      <span>{{step.stepTitle}}</span>
+    </div>
+    <div *ngIf="steps && i < steps.length - 1" class="step-divider"></div>
+  </ng-container>
+</div>
+

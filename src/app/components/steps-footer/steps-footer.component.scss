@@ -1,0 +1,24 @@
+@import './../../../assets/colors.scss';
+
+.steps-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid gainsboro;
+    .btn {
+        color: $white;
+        background: $blue;
+        padding: 5px;
+        border-radius: 50px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none !important;
+        margin: 5px 20px;
+        min-width: 15%;
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed !important;
+        }
+    }
+}

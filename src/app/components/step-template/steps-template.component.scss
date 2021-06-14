@@ -1,36 +1,22 @@
 @import './../../../assets/colors.scss';
 
-.step-content-label {
-    margin-bottom: 16px;
-}
-
-.step-complete-btn {
-    padding: 10px 20px 10px 10px;
-    border-radius: 50px;
-    border: none !important;
-    background: #c9e6ff;
-    display: flex;
-    align-items: center;
-}
-
-.completed-step-check {
-    margin-right: 12px;
-    color: $blue !important;
-}
-
 .stepper-container {
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 1px solid #c9e6ff;
+    border: 1px solid $gray;
     border-radius: 30px;
-    box-shadow: 1px 1px 15px 6px #c9e6ff;
-    width: 700px;
+    box-shadow: 1px 1px 15px 6px $light-blue;
+    width: auto;
     height: auto;
     .step-content {
         flex: 1;
         padding: 0;
         align-items: center;
+        text-align: center;
+        h3 {
+            margin-block-end: 0;
+        }
     }
     app-steps-header {
         width: inherit;

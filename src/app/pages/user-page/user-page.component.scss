@@ -8,9 +8,9 @@
   align-items: center;
   .user-card {
     display: flex;
-    border: 1px solid gainsboro;
+    border: 1px solid $gray;
     border-radius: 30px;
-    box-shadow: 0 0 15px 5px gainsboro;
+    box-shadow: 0 0 15px 5px $light-blue;
     align-items: center;
     padding: 40px;
     .avatar {
